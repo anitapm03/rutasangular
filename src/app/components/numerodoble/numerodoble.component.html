@@ -1,0 +1,17 @@
+<div>
+    <h1>Numero doble (Rutas con parámetros)</h1>
+
+    <div *ngIf="num">
+        <h1 style="color: aqua;">El doble de {{num}} es {{doble}}</h1>
+    </div>
+
+    <div *ngIf="!num">
+        <h1 style="color: red;">No se ha recibido el numero</h1>
+    </div>
+
+    <button (click)="redirect(66)">Doble 66</button>
+    <button (click)="redirect(4)">Doble 4</button>
+    <button (click)="redirect(37)">Doble 37</button>
+
+    <button (click)="goToHome()">Volver</button>
+</div>
